@@ -1,6 +1,7 @@
-(defproject opsearch "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+(defproject opsearch "1.0.0"
+  :description "A simple, partially optimised implementation of a breadth-first search mechanism for applying simple STRIPS-style operators."
+  :url "https://github.com/cognesence/opsearch"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.8.0"]])
+  :dependencies [[org.clojure/clojure "1.8.0"]
+               [org.clojars.cognesence/matcher "1.0.1"]])
