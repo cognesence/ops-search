@@ -1,4 +1,4 @@
-(defproject opsearch "1.0.0"
+(defproject org.clojars.cognesence/opsearch "1.0.0"
   :description "A simple, partially optimised implementation of a breadth-first search mechanism for applying simple STRIPS-style operators."
   :url "https://github.com/cognesence/opsearch"
   :license {:name "Eclipse Public License"
