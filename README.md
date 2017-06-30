@@ -25,8 +25,7 @@ Leiningen `project.clj` file.
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.8.0"]
-               [org.clojars.cognesence/opsearch "1.0.1"]])
-
+                 [org.clojars.cognesence/opsearch "1.0.1"]])
 ```
 
 ## Overview
@@ -59,30 +58,27 @@ operators used in the examples below are based on a tuple representation.
 For example, a move-agent operator could be written as:
 
 ```clojure
-    move    {:pre ((agent ?agent)
-                   (at ?agent ?p1)
-                   (connects ?p1 ?p2)
-                   )
-             :add ((at ?agent ?p2))
-             :del ((at ?agent ?p1))
+move {:pre ((agent ?agent)
+            (at ?agent ?p1)
+            (connects ?p1 ?p2))
+      :add ((at ?agent ?p2))
+      :del ((at ?agent ?p1))}
 ```
 
 Given a state description like:
 
 ```clojure
-  '#{(at Ralf table)
-     (connects table bench)
-     (agent Ralf)
-     })
+'#{(at Ralf table)
+   (connects table bench)
+   (agent Ralf)}
 ```
 
 The move operator could produce a successor state:
 
 ```clojure
-  '#{(at Ralf bench)
-     (connects table bench)
-     (agent Ralf)
-     })
+'#{(at Ralf bench)
+   (connects table bench)
+   (agent Ralf)}
 ```
 
 By deleting `(at Ralf table)` and adding `(at Ralf bench)`.
