@@ -1,6 +1,6 @@
-(ns opsearch.core-test
+(ns ops-search.core-test
   (:require [clojure.test :refer :all]
-            [opsearch.core :refer :all]))
+            [ops-search.core :refer :all]))
 
 (deftest a-test
   (testing "FIXME, I fail."

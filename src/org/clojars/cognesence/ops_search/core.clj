@@ -1,6 +1,6 @@
 (ns ^{:doc "A simple, partially optimised implementation of a breadth-first search mechanism for applying simple STRIPS-style operators."
      :author "Simon Lynch"}
- org.clojars.cognesence.opsearch.core)
+ org.clojars.cognesence.ops-search.core)
  
 (require '[clojure.set :refer :all])
 (require '[clojure.pprint :refer :all])
