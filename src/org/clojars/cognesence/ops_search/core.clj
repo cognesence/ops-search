@@ -1,13 +1,11 @@
-(ns ^{:doc "A simple, partially optimised implementation of a breadth-first search mechanism for applying simple STRIPS-style operators."
-     :author "Simon Lynch"}
- org.clojars.cognesence.ops-search.core)
- 
-(require '[clojure.set :refer :all])
-(require '[clojure.pprint :refer :all])
-(require '[org.clojars.cognesence.matcher.core :refer :all])
+(ns org.clojars.cognesence.ops-search.core
+  ^{:doc "A simple, partially optimised implementation of a breadth-first search mechanism for applying simple STRIPS-style operators."
+    :author "Simon Lynch"}
+  (:require [clojure.set :refer :all]
+            [clojure.pprint :refer :all]
+            [org.clojars.cognesence.matcher.core :refer :all]))
 
 (declare finalise-results update-state-map apply-op apply-all)
-
 
 (defn ops-search
   [start goal ops & {:keys [world debug]
