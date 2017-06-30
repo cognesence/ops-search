@@ -15,7 +15,7 @@ STRIPS-style operators. For a more efficient engine, check out [the planner](htt
 
 ## Installation
 
-This library is hosted on clojars. Get it by adding `org.clojars.cognesence/opsearch` to your dependencies in your
+This library is hosted on clojars. Get it by adding `org.clojars.cognesence/ops-search` to your dependencies in your
 Leiningen `project.clj` file.
 
 ```
@@ -25,7 +25,7 @@ Leiningen `project.clj` file.
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojars.cognesence/opsearch "1.0.1"]])
+                 [org.clojars.cognesence/ops-search "1.0.1"]])
 ```
 
 ## Overview
