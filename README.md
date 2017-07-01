@@ -28,6 +28,9 @@ Leiningen `project.clj` file.
                  [org.clojars.cognesence/ops-search "1.0.1"]])
 ```
 
+**Note:** This library used to be called `opsearch` but isn't anymore. The `opsearch` package on Clojars is deprecated
+and not maintained.
+
 ## Overview
 
 The `ops-search` method takes the following arguments:
@@ -44,7 +47,7 @@ A map is returned showing:
 + any commands to send to another subsystem
 + a textual description of the path
 
-**Note:** it is possible to use ops-search without the pattern matcher but its use is then highly restricted. For this
+**Note:** It is possible to use ops-search without the pattern matcher but its use is then highly restricted. For this
 guide we assume the pattern matcher will be used.
 
 Goals are minimally specified so any state which is a superset of the goal is deemed a goal state.
